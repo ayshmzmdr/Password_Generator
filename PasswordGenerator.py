@@ -39,3 +39,9 @@ password=""
 for x in range(0,size):
     password=password+str(passwordSet.pop())
 print(password)
+
+app=input("Which application will use this password? ")
+
+file=open("Manager.txt","a")
+file.write(password+" : "+app+"\n")
+file.close()
